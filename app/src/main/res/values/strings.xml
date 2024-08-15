@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AristiChat</string>
+
+
+    <!--Main-->
+    <string name="main_welcome_message">Bienvenido a AristiChat</string>
+    <string name="main_welcome_subtitle">El mejor chat del mundo mundial.</string>
+    <string name="main_username_hint">Nombre de usuario</string>
+    <string name="main_btn_chat_string">Chat!</string>
+
+    <!--CHAT-->
+    <string name="chat_send_message_hint">Enter Message</string>
+    <string name="chat_btn_send">Send</string>
+    <string name="chat_icon_back_content_description">icon back</string>
+
+
+</resources>

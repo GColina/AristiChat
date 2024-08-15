@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.chat.ChatFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- El padding es el que sirve para que el boton ocupe mas el margin es para separarlo. -->
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/chat_icon_back_content_description"
+            android:paddingHorizontal="16dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Bienvenido GColina" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerTop"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dividerTop"
+        app:layout_constraintBottom_toTopOf="@id/dividerBottom"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/dividerBottom"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toTopOf="@+id/chat" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/chat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/etChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="message"
+            android:hint="@string/chat_send_message_hint"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_btn_send" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

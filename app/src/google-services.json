@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704157338088",
+    "project_id": "aristichat-eb423",
+    "storage_bucket": "aristichat-eb423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704157338088:android:119abf435519ace3857c5d",
+        "android_client_info": {
+          "package_name": "com.gcolina.aristichat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPje-VDnMRGHag8pc_W_QXjL6bRqK3x5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
